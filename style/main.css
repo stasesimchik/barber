@@ -19,7 +19,16 @@
     position: absolute;
     z-index: -1; }
   .header-bg__content {
-    text-align: center; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
   .header-bg__title {
     text-transform: uppercase;
     font-size: 70px;
@@ -33,7 +42,7 @@
   .header-bg__line {
     width: 100px;
     height: 2px;
-    color: #14c3dc; }
+    background: #14c3dc; }
 
 .main-button {
   padding: 15px 25px;
@@ -109,6 +118,40 @@
     text-transform: uppercase; }
     .menu-list__link:hover {
       color: #138fa1; }
+
+.welcome {
+  margin-top: 60px; }
+  .welcome-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .welcome-description__left {
+      padding-right: 40px; }
+    .welcome-description__title {
+      font-size: 30px;
+      font-family: 'Raleway', sans-serif;
+      text-transform: uppercase;
+      color: #000000;
+      font-weight: bold;
+      margin-top: 52px; }
+    .welcome-description__button {
+      font-size: 13px;
+      padding: 14px 25px;
+      background-color: black;
+      border: none;
+      color: #fff;
+      text-transform: uppercase;
+      font-family: 'Raleway', sans-serif;
+      margin-top: 40px; }
+    .welcome-description__image {
+      -webkit-box-shadow: 10px 10px 10px #e28573;
+      box-shadow: 10px 10px 10px #e28573; }
+    .welcome-description__line {
+      display: block;
+      height: 2px;
+      background: black;
+      width: 37px;
+      margin: 25px 0; }
 
 body {
   font-size: 14px;

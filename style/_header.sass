@@ -12,7 +12,9 @@
    position: absolute
    z-index: -1
   &__content
-   text-align: center
+   display: flex
+   align-items: center
+   flex-direction: column
   &__title
     text-transform: uppercase
     font-size: 70px
@@ -26,7 +28,7 @@
   &__line
     width: 100px
     height: 2px
-    color: $active
+    background: $active
 .main-button
   padding: 15px 25px
   background: #fff
