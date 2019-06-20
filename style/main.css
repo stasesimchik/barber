@@ -121,10 +121,42 @@
 
 .welcome {
   margin-top: 60px; }
+  .welcome-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .welcome-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-preferred-size: 33%;
+    flex-basis: 33%; }
+    .welcome-block__image {
+      margin-right: 23px; }
+    .welcome-block__title {
+      margin: 0;
+      font-size: 15px;
+      text-transform: uppercase;
+      color: black;
+      font-weight: 700; }
+    .welcome-block__text {
+      margin: 26px 0;
+      font-size: 14px; }
   .welcome-description {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    .welcome-description__text {
+      margin-top: 30px; }
     .welcome-description__left {
       padding-right: 40px; }
     .welcome-description__title {
@@ -143,6 +175,8 @@
       text-transform: uppercase;
       font-family: 'Raleway', sans-serif;
       margin-top: 40px; }
+      .welcome-description__button:hover {
+        background-color: #1a1a1a; }
     .welcome-description__image {
       -webkit-box-shadow: 10px 10px 10px #e28573;
       box-shadow: 10px 10px 10px #e28573; }
@@ -161,3 +195,25 @@ body {
 .container {
   max-width: 1172px;
   margin: 0 auto; }
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 15px; }
+  .header-bg__title {
+    font-size: 60px; }
+  .welcome-block {
+    -ms-flex-preferred-size: 49%;
+    flex-basis: 49%; } }
+
+@media (max-width: 980px) {
+  .header-bg {
+    background-image: url(../img/header-bgsmall.png); }
+    .header-bg__title {
+      font-size: 50px; }
+  .welcome-description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .welcome-description__title {
+      text-align: center; } }
