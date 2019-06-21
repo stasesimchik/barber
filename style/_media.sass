@@ -16,5 +16,28 @@
    &-description
      flex-direction: column
      &__left
+       display: flex
+       flex-direction: column
+       align-items: center
+       margin-bottom: 40px
+       margin: 25px auto
      &__title
        text-align: center
+     &__image
+       width: 50%
+       margin: auto
+@media (max-width: 824px)
+  .header-bg
+    display: none
+  .welcome
+    &-block
+      flex-basis: 51%
+      margin: auto
+  .menu
+    display: none
+    background-color: #138fa1
+    &-burger
+      display: block
+@media (max-width: 576px)
+  .top-nav
+    display: none

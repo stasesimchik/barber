@@ -38,7 +38,8 @@
     .header-bg__title span {
       color: #14c3dc; }
   .header-bg__text {
-    color: #fcfcfc; }
+    color: #fcfcfc;
+    text-align: center; }
   .header-bg__line {
     width: 100px;
     height: 2px;
@@ -118,6 +119,34 @@
     text-transform: uppercase; }
     .menu-list__link:hover {
       color: #138fa1; }
+
+.menu-burger {
+  display: none; }
+  .menu-burger__button {
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px; }
+    .menu-burger__button:focus {
+      outline: none; }
+  .menu-burger__line {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #fff; }
+    .menu-burger__line::after, .menu-burger__line::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: #fff;
+      -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+      transform: translateY(10px); }
+    .menu-burger__line::before {
+      -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      transform: translateY(-10px); }
 
 .welcome {
   margin-top: 60px; }
@@ -215,5 +244,38 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
+    .welcome-description__left {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-bottom: 40px;
+      margin: 25px auto; }
     .welcome-description__title {
-      text-align: center; } }
+      text-align: center; }
+    .welcome-description__image {
+      width: 50%;
+      margin: auto; } }
+
+@media (max-width: 824px) {
+  .header-bg {
+    display: none; }
+  .welcome-block {
+    -ms-flex-preferred-size: 51%;
+    flex-basis: 51%;
+    margin: auto; }
+  .menu {
+    display: none;
+    background-color: #138fa1; }
+    .menu-burger {
+      display: block; } }
+
+@media (max-width: 576px) {
+  .top-nav {
+    display: none; } }
