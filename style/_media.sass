@@ -26,7 +26,21 @@
      &__image
        width: 50%
        margin: auto
+  .concept
+    &-description
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__line
+      margin: auto
+    &-content
+      flex-direction: column
+    &-image
+      width: 50%
+      margin: auto
 @media (max-width: 824px)
+  body
+    font-size: 12px
   .header-bg
     display: none
   .welcome
@@ -38,6 +52,17 @@
     background-color: #138fa1
     &-burger
       display: block
+  .design
+    margin-top: 50px
+    &-content
+      &__title
+        font-size: 24px
+      &__text
+        font-size: 11px
 @media (max-width: 576px)
   .top-nav
     display: none
+  .concept-description__block
+    flex-basis: 51%
+    justify-content: center
+    margin: auto
