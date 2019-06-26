@@ -357,6 +357,18 @@ body {
     -ms-flex-preferred-size: 49%;
     flex-basis: 49%; } }
 
+@media (max-width: 1060px) {
+  .skills-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .skills-block__item {
+      width: 100%; }
+      .skills-block__item img {
+        width: 100%;
+        margin: auto; } }
+
 @media (max-width: 980px) {
   .header-bg {
     background-image: url(../img/header-bgsmall.png); }
@@ -437,4 +449,6 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin: auto; } }
+    margin: auto; }
+  progress {
+    width: 100%; } }
