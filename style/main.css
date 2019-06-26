@@ -289,6 +289,7 @@
     align-items: center; }
   .skills-block {
     margin-top: 60px;
+    margin-bottom: 100px;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     display: -webkit-box;
@@ -328,6 +329,40 @@ progress {
     display: block;
     color: black;
     font-weight: 700; }
+
+.works-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.works-blocks {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.works-block {
+  margin-bottom: 50px;
+  text-align: center; }
+  .works-block__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: black; }
+  .works-block__text {
+    font-style: italic; }
 
 body {
   font-size: 14px;
