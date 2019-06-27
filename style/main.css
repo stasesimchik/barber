@@ -415,6 +415,42 @@ progress {
       margin-bottom: 113px;
       text-transform: uppercase; }
 
+.process-description__title {
+  text-transform: uppercase;
+  color: black;
+  margin-top: 60px;
+  margin-bottom: 34px; }
+
+.process-content {
+  margin-top: 60px;
+  padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: 1px solid #eaeaea; }
+  .process-content__image {
+    -ms-flex-preferred-size: 49%;
+    flex-basis: 49%; }
+    .process-content__image img {
+      -webkit-box-shadow: 10px 10px 10px #e28573;
+      box-shadow: 10px 10px 10px #e28573; }
+  .process-content__description {
+    -ms-flex-preferred-size: 49%;
+    flex-basis: 49%; }
+
+.mission {
+  padding-top: 60px; }
+  .mission-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+
 body {
   font-size: 14px;
   font-family: 'Lato', sans-serif;
