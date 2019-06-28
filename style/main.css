@@ -579,25 +579,33 @@ progress {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      padding: 100px 120px;
       background-color: #fff;
       margin: 60px 10px; }
       .pricing-content__block span {
         display: block; }
 
+.block__items {
+  margin-top: 40px;
+  text-align: center; }
+
 .block__item {
   margin-bottom: 10px; }
 
 .block__price {
-  margin-bottom: 100px;
   font-size: 40px;
   text-transform: uppercase;
   font-weight: 700;
-  color: black; }
+  color: black;
+  text-align: center; }
+
+.block-price {
+  padding: 80px 120px;
+  border-bottom: 1px solid #efefef; }
 
 .block-button {
   margin-top: 40px;
   font-size: 13px;
+  margin-bottom: 70px;
   font-family: 'Raleway', sans-serif;
   padding: 15px 25px;
   border: none;
@@ -605,6 +613,14 @@ progress {
   color: #fff; }
   .block-button:hover {
     background-color: #14c3dc; }
+  .block-button:focus {
+    outline: none; }
+
+.pricing-content__block:hover .block-price {
+  background-color: #14c3dc; }
+
+.pricing-content__block:hover .block__price {
+  color: #fff; }
 
 body {
   font-size: 14px;
